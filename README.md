@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/github/workflow/status/pelican-plugins/tipue-search/build)](https://github.com/pelican-plugins/tipue-search/actions) [![PyPI Version](https://img.shields.io/pypi/v/pelican-tipue-search)](https://pypi.org/project/pelican-tipue-search/)
 
-Serialize generated HTML to JSON content for use by the Tipue static search jQuery plugin.
+Serialize generated HTML content to a JS variable for use by the Tipue static search jQuery plugin.
 
 
 ## Installation
