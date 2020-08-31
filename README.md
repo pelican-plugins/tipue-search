@@ -14,7 +14,7 @@ This plugin can be installed via:
 
 ## Why do you need it?
 
-Static sites do not offer search feature out of the box. [Tipue Search](http://www.tipue.com/search/)
+Static sites do not offer search feature out of the box. [Tipue Search](https://web.archive.org/web/20200703134724/https://tipue.com/search/)
 is a jQuery plugin that search the static site without using any third party service, like DuckDuckGo or Google.
 
 Tipue search requires the textual content of site in a JS variable.
@@ -48,7 +48,7 @@ JS variable is written to file `tipuesearch_content.js` which is created in the 
 
 ## How to use
 
-Your theme needs to have Tipue Search properly configured in it. [Official documentation](http://www.tipue.com/search/help/) has the required details.
+Your theme needs to have Tipue Search properly configured in it. [Official documentation](https://web.archive.org/web/20200703134724/https://tipue.com/search/help/) has the required details.
 
 In addition to the instructions from Tipue, the following has to be added in `pelicanconf.py`.
 
@@ -74,6 +74,18 @@ This plugin requires Tipue Search Version 7.0 or higher.
 Tipue used to expect content in a json file. Around Version 7.0, Tipue maintainers made a switch to JavaScript variable. tipue_search plugin was updated to reflect this change in commit `4a5f171fc`. Latest version of tipue_search plugin will not work with older versions of Tipue Search.
 
 If you are using older Tipue Search, prior to 7.0 release, then you will find old version of tipue_search plugin in commit `2dcdca8c8`.
+
+
+## Source Archive
+
+The Tipue Search project itself seems to have been long abandonned. There is no
+longer any official canonical reference of source code or documentation. There
+only some artifacts left that were archived by the community:
+
+* [Archived Tipue Search homepage](https://web.archive.org/web/20200703134724/https://tipue.com/search/)
+* [Archived Tipue plugin help page](https://web.archive.org/web/20200703134724/https://tipue.com/search/help/)
+* [Archived Tipue Search code v7.1](https://web.archive.org/web/20200703134724/https://www.tipue.com/search/tipuesearch.zip)
+* [GitHub repository copy](https://notabug.org/jorgesumle/Tipue-Search)
 
 
 ## Contributing
