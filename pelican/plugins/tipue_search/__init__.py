@@ -1,1 +1,1 @@
-from .tipue_search import *
+from .tipue_search import *  # NOQA
