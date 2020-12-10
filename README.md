@@ -64,7 +64,7 @@ Furthermore, the generated JavaScript variable has to be sourced in the relevant
 <script src="{{ SITEURL }}tipuesearch_content.js"></script>
 ```
 
-Pelican [Elegant Theme](https://github.com/talha131/pelican-elegant) and [Plumage theme](https://github.com/kdeldycke/plumage) have Tipue Search configured. You can view their code to understand the configuration.
+Pelican [Plumage theme](https://github.com/kdeldycke/plumage) has Tipue Search configured. Check our its code to understand the configuration.
 
 
 ## Backward Compatibility
