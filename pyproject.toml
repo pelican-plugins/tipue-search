@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "pelican-tipue-search"
+name = "pelican-search"
 version = "0.0.0"
-description = "Serialize generated HTML content to a JS variable for use by the Tipue static search jQuery plugin"
+description = "Serialize generated HTML content to a JS variable to enable static site searches"
 authors = ["Talha Mansoor <talha131@gmail.com>"]
 license = "AGPL-3.0"
 readme = "README.md"
-keywords = ["pelican", "plugin", "search", "tipue-search", "jquery", "json"]
-repository = "https://github.com/pelican-plugins/tipue-search"
+keywords = ["pelican", "plugin", "search", "jquery", "json"]
+repository = "https://github.com/pelican-plugins/search"
 documentation = "https://docs.getpelican.com"
 packages = [
     { include = "pelican" },
@@ -25,7 +25,7 @@ classifiers = [
 
 [tool.poetry.urls]
 "Funding" = "https://donate.getpelican.com/"
-"Issue Tracker" = "https://github.com/pelican-plugins/tipue-search/issues"
+"Issue Tracker" = "https://github.com/pelican-plugins/search/issues"
 
 [tool.poetry.dependencies]
 python = "^3.6"
@@ -51,7 +51,7 @@ Werkzeug = "^1.0"
 markdown = ["markdown"]
 
 [tool.autopub]
-project-name = "tipue-search"
+project-name = "search"
 git-username = "botpub"
 git-email = "botpub@autopub.rocks"
 

@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Tipue Search
-============
+Search
+======
 
 A Pelican plugin to serialize generated HTML to JSON
-that can be used by jQuery plugin - Tipue Search.
+that can be used for static site searches.
 
 Copyright (c) Talha Mansoor
 """
@@ -25,7 +25,7 @@ except ImportError:
 from pelican import signals
 
 
-class Tipue_Search_JSON_Generator(object):
+class Search_JSON_Generator(object):
     def __init__(self, context, settings, path, theme, output_path, *null):
 
         self.output_path = output_path
@@ -129,7 +129,7 @@ class Tipue_Search_JSON_Generator(object):
 
 
 def get_generators(generators):
-    return Tipue_Search_JSON_Generator
+    return Search_JSON_Generator
 
 
 def register():
