@@ -1,15 +1,16 @@
-# tipue-search: A Plugin for Pelican
+# Search: A Plugin for Pelican
 
-[![Build Status](https://img.shields.io/github/workflow/status/pelican-plugins/tipue-search/build)](https://github.com/pelican-plugins/tipue-search/actions) [![PyPI Version](https://img.shields.io/pypi/v/pelican-tipue-search)](https://pypi.org/project/pelican-tipue-search/)
+[![Build Status](https://img.shields.io/github/workflow/status/pelican-plugins/search/build)](https://github.com/pelican-plugins/search/actions)
+[![PyPI Version](https://img.shields.io/pypi/v/pelican-search)](https://pypi.org/project/pelican-search/)
 
-Serialize generated HTML content to a JS variable for use by the Tipue static search jQuery plugin.
+Serialize generated HTML content to a JS variable for static site searches.
 
 
 ## Installation
 
 This plugin can be installed via:
 
-    python -m pip install pelican-tipue-search
+    python -m pip install pelican-search
 
 
 ## Why do you need it?
@@ -17,7 +18,7 @@ This plugin can be installed via:
 Static sites do not offer search feature out of the box. [Tipue Search](https://web.archive.org/web/20200703134724/https://tipue.com/search/)
 is a jQuery plugin that search the static site without using any third party service, like DuckDuckGo or Google.
 
-Tipue search requires the textual content of site in a JS variable.
+Tipue Search requires the textual content of site in a JS variable.
 
 
 ## How Tipue Search works
@@ -50,11 +51,11 @@ JS variable is written to file `tipuesearch_content.js` which is created in the 
 
 Your theme needs to have Tipue Search properly configured in it. [Official documentation](https://web.archive.org/web/20200703134724/https://tipue.com/search/help/) has the required details.
 
-In addition to the instructions from Tipue, the following has to be added in `pelicanconf.py`.
+In addition to the instructions from Tipue Search, the following has to be added in `pelicanconf.py`.
 
 ```python
 PLUGIN_PATH = 'plugins'
-PLUGINS = ['tipue_search']
+PLUGINS = ['search']
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'search']
 ```
 
@@ -71,9 +72,9 @@ Pelican [Plumage theme](https://github.com/kdeldycke/plumage) has Tipue Search c
 
 This plugin requires Tipue Search Version 7.0 or higher.
 
-Tipue used to expect content in a json file. Around Version 7.0, Tipue maintainers made a switch to JavaScript variable. tipue_search plugin was updated to reflect this change in commit `4a5f171fc`. Latest version of tipue_search plugin will not work with older versions of Tipue Search.
+Tipue Search used to expect content in a json file. Around Version 7.0, Tipue Search made a switch to JavaScript variable. This plugin was updated to reflect this change in commit `4a5f171fc`. Latest version of this plugin will not work with older versions of Tipue Search.
 
-If you are using older Tipue Search, prior to 7.0 release, then you will find old version of tipue_search plugin in commit `2dcdca8c8`.
+If you are using older Tipue Search, prior to 7.0 release, then you will find old version of this plugin in commit `2dcdca8c8`.
 
 
 ## Source Archive
@@ -94,5 +95,5 @@ Contributions are welcome and much appreciated. Every little bit helps. You can 
 
 To start contributing to this plugin, review the [Contributing to Pelican][] documentation, beginning with the **Contributing Code** section.
 
-[existing issues]: https://github.com/pelican-plugins/tipue-search/issues
+[existing issues]: https://github.com/pelican-plugins/search/issues
 [Contributing to Pelican]: https://docs.getpelican.com/en/latest/contribute.html
