@@ -1,6 +1,13 @@
 # tipue-search: A Plugin for Pelican
 
-[![Build Status](https://img.shields.io/github/workflow/status/pelican-plugins/tipue-search/build)](https://github.com/pelican-plugins/tipue-search/actions) [![PyPI Version](https://img.shields.io/pypi/v/pelican-tipue-search)](https://pypi.org/project/pelican-tipue-search/)
+> :warning: **Instead of this plugin, please use the [Pelican Search](https://github.com/pelican-plugins/search) plugin.**
+
+> :warning: This plugin, and the jQuery code upon which it depends, **is abandoned and no longer maintained.**
+
+This repository will eventually be deleted. The relevant code is archived in the [Legacy Plugin Repository](https://github.com/getpelican/pelican-plugins/tree/master/tipue_search).
+
+
+## Purpose
 
 Serialize generated HTML content to a JS variable for use by the Tipue static search jQuery plugin.
 
@@ -9,7 +16,7 @@ Serialize generated HTML content to a JS variable for use by the Tipue static se
 
 This plugin can be installed via:
 
-    python -m pip install pelican-tipue-search
+    python -m pip install -e "git+https://github.com/getpelican/pelican-plugins/#egg=pelican-tipue-search&subdirectory=tipue_search"
 
 
 ## Why do you need it?
@@ -58,27 +65,27 @@ PLUGINS = ['tipue_search']
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'search']
 ```
 
-Furthermore, the generated JavaScript variable has to be sourced in the relevant html pages.
+Furthermore, the generated JavaScript variable has to be sourced in the relevant HTML pages.
 
 ```html
 <script src="{{ SITEURL }}tipuesearch_content.js"></script>
 ```
 
-Pelican [Plumage theme](https://github.com/kdeldycke/plumage) has Tipue Search configured. Check our its code to understand the configuration.
+Pelican [Plumage theme](https://github.com/kdeldycke/plumage) has Tipue Search configured. Check out its code to understand the configuration.
 
 
 ## Backward Compatibility
 
 This plugin requires Tipue Search Version 7.0 or higher.
 
-Tipue used to expect content in a json file. Around Version 7.0, Tipue maintainers made a switch to JavaScript variable. tipue_search plugin was updated to reflect this change in commit `4a5f171fc`. Latest version of tipue_search plugin will not work with older versions of Tipue Search.
+Tipue used to expect content in a JSON file. Around Version 7.0, Tipue maintainers made a switch to JavaScript variable. tipue_search plugin was updated to reflect this change in commit `4a5f171fc`. Latest version of tipue_search plugin will not work with older versions of Tipue Search.
 
 If you are using older Tipue Search, prior to 7.0 release, then you will find old version of tipue_search plugin in commit `2dcdca8c8`.
 
 
 ## Source Archive
 
-The Tipue Search project itself seems to have been long abandonned. There is no
+The Tipue Search project itself seems to have been long abandoned. There is no
 longer any official canonical reference of source code or documentation. There
 only some artifacts left that were archived by the community:
 
@@ -86,13 +93,3 @@ only some artifacts left that were archived by the community:
 * [Archived Tipue plugin help page](https://web.archive.org/web/20200703134724/https://tipue.com/search/help/)
 * [Archived Tipue Search code v7.1](https://web.archive.org/web/20200703134724/https://www.tipue.com/search/tipuesearch.zip)
 * [GitHub repository copy](https://notabug.org/jorgesumle/Tipue-Search)
-
-
-## Contributing
-
-Contributions are welcome and much appreciated. Every little bit helps. You can contribute by improving the documentation, adding missing features, and fixing bugs. You can also help out by reviewing and commenting on [existing issues][].
-
-To start contributing to this plugin, review the [Contributing to Pelican][] documentation, beginning with the **Contributing Code** section.
-
-[existing issues]: https://github.com/pelican-plugins/tipue-search/issues
-[Contributing to Pelican]: https://docs.getpelican.com/en/latest/contribute.html
